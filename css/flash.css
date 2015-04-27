@@ -1,0 +1,40 @@
+div.top-flash {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	background-color: white;
+	text-transform: uppercase;
+	width: 100%;
+}
+div.top-flash span p {
+	border: 2px solid white;
+	padding: 15px 0;
+	margin: 5px 5px 0 5px;
+	color: white;
+	position: relative;
+}
+span.error p {
+	background-color: #f15e58
+}
+span.success p {
+	background-color: #8eeb8e;
+}
+span.notice p {
+	background-color: #72d6e8;
+}
+div.top-flash {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards; /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards; /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards; /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to { width:0; height:0; overflow:hidden; }
+}
+@-webkit-keyframes cssAnimation {
+    to { width:0; height:0; overflow:hidden; }
+}

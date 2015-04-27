@@ -1,0 +1,20 @@
+{
+    "name": "rarths/csparkles",    
+    "type": "library",
+    "description": "PHP classes for flashing messages",
+    "keywords": ["module", "framework", "mvc", "flash", "messages", "anax"],
+    "homepage": "http://dbwebb.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin Hansson (roha15)",
+            "email": "robin@rarths.net",
+            "homepage": "http://rarths.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    }
+}
+
