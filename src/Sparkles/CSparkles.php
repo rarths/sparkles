@@ -74,7 +74,7 @@ class CSparkles {
 	}
 
 	/**
-	 * Output stored messages.
+	 * Get stored messages, clean the session and output the messages.
 	 *
      * @return object $flash with all messages.
 	 */

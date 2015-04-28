@@ -7,7 +7,7 @@ Made this modul as a assignment in the PHPMVC course at BTH. The module is inspi
 
 Install
 ----------------------------------
-- Install [packagist](https://packagist.org/packages/rarths/csparkles) via composer or clone it directly to your project and make sure csparkles autoloads (autoloads via composer install).
+- Install [packagist](https://packagist.org/packages/rarths/csparkles) via composer (recomended) or clone it directly to your project. If you choose to clone it, make sure csparkles.php autoloads.
 
 - Add Sparkles as a service to your project through the Dependency Injection and make sure session is started.
 ```php
@@ -18,7 +18,7 @@ $di->set('sparkles', function () use ($di) {
 });
 ```
 
-- Include the flash.css to your CSS setup or use your own CSS classes.
+- Include the flash.css to your CSS setup or use your own CSS classes. Read extras for IE support. For custom CSS classes add 'error', 'success', 'notice' as parameters to Sparkles. Leave empty for default values.
 ```php
 $di->set('sparkles', function () use ($di) {
     $sparkles = new \Rarths\Sparkles\CSparkles(array(
@@ -31,15 +31,15 @@ $di->set('sparkles', function () use ($di) {
 });
 ```
 
-- Change your existing error messages with this line.
+- Add a message to be flashed with this line:
 ```php
-$app->sparkles->flash('error', 'Oh sparkles! Have to watch out somewhere..');
+$app->sparkles->flash('error', 'Oh sparkles! You have to watch out somewhere..');
 ```
 
 - To output messages, put this in your view.
 ```php
 $messages = $this->sparkles->output();
-if (!empty($message)) {
+if (!empty($messages)) {
 	echo '<div class="top-flash">';
 	foreach ($messages as $key => $message) {
 		echo $message;
@@ -50,10 +50,10 @@ if (!empty($message)) {
 
 Extra
 ----------------------------------
-If you are using the default top-flash its a good idea to put the ouput in your footer.
+- If you are using the default top-flash its a good idea to put the ouput in your footer.
 In that way you make sure you're not excluding any flashing messages.
 
-The messages is using CSS3 Animations to be gone in 5s. CSS3 Animations is supported by IE 10+.
+- Messages is using CSS3 Animations to be gone in 5s. CSS3 Animations is supported by IE 10+.
 
 By Robin Hansson (robin@rarths.net)
 
