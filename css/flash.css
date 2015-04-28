@@ -5,7 +5,6 @@ div.top-flash {
 	right: 0;
 	left: 0;
 	text-align: center;
-	background-color: white;
 	text-transform: uppercase;
 	width: 100%;
 }
@@ -30,16 +29,16 @@ span.notice p {
 
 /* FLASH MESSAGE 5S GONE ANIMATION IE 10+ SUPPORT */
 div.top-flash {
-    -moz-animation: cssAnimation 0s ease-in 5s forwards; /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 5s forwards; /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 5s forwards; /* Opera */
-    animation: cssAnimation 0s ease-in 5s forwards;
+    -moz-animation: topFlash 0s ease-in 5s forwards; /* Firefox */
+    -webkit-animation: topFlash 0s ease-in 5s forwards; /* Safari and Chrome */
+    -o-animation: topFlash 0s ease-in 5s forwards; /* Opera */
+    animation: topFlash 0s ease-in 5s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
-@keyframes cssAnimation {
+@keyframes topFlash {
     to { top: -100%; }
 }
-@-webkit-keyframes cssAnimation {
+@-webkit-keyframes topFlash {
     to { top: -100%; }
 }
