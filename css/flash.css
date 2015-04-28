@@ -38,8 +38,8 @@ div.top-flash {
     animation-fill-mode: forwards;
 }
 @keyframes cssAnimation {
-    to { width:0; height:0; overflow:hidden; }
+    to { top: -100%; }
 }
 @-webkit-keyframes cssAnimation {
-    to { width:0; height:0; overflow:hidden; }
+    to { top: -100%; }
 }
