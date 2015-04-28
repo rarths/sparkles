@@ -55,7 +55,7 @@ In that way you make sure you're not excluding any flashing messages.
 
 - Messages is using CSS3 Animations to be gone in 5s. CSS3 Animations is supported by IE 10+.
 
-- Messages will look like [this](https://packagist.org/packages/rarths/csparkles)
+- Messages will look like [this](http://www.student.bth.se/~roha15/phpmvc/kmom05/webroot/sparkles)
 
 - Problems? Feel free to contact me (in Swedish or English)
 

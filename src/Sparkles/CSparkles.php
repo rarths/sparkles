@@ -82,6 +82,8 @@ class CSparkles {
 		$flash = $this->_getSession();
 		$this->_clean();
 
-		return $flash['message'];
+		if (isset($flash['message'])) {
+			return $flash['message'];
+		}
 	}
 }
