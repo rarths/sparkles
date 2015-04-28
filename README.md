@@ -7,9 +7,9 @@ Made this modul as a assignment in the PHPMVC course at BTH. The module is inspi
 
 Install
 ----------------------------------
-- Install [packagist](https://packagist.org/packages/rarths/csparkles) via composer or clone it directly to your project and make sure csparkles autoloads.
+- Install [packagist](https://packagist.org/packages/rarths/csparkles) via composer or clone it directly to your project and make sure csparkles autoloads (autoloads via composer install).
 
-- Add Sparkles as a service to your project through the Dependency Injection and make sure you start the session.
+- Add Sparkles as a service to your project through the Dependency Injection and make sure session is started.
 ```php
 $di->set('sparkles', function () use ($di) {
     $sparkles = new \Rarths\Sparkles\CSparkles();
@@ -22,9 +22,9 @@ $di->set('sparkles', function () use ($di) {
 ```php
 $di->set('sparkles', function () use ($di) {
     $sparkles = new \Rarths\Sparkles\CSparkles(array(
-    	'error' 	=> 'error-message',
-    	'success' 	=> 'success-message',
-    	'notice' 	=> 'notice-message',
+    	'error' 	=> 'custom-error-message-class',
+    	'success' 	=> 'custom-success-message-class',
+    	'notice' 	=> 'custom-notice-message-class',
 	));
     $sparkles->setDI($di);
     return $sparkles;
@@ -53,7 +53,7 @@ Extra
 If you are using the default top-flash its a good idea to put the ouput in your footer.
 In that way you make sure you're not excluding any flashing messages.
 
-The messages is using CSS3 Animations and are not supported by IE -9.
+The messages is using CSS3 Animations to be gone in 5s. CSS3 Animations is supported by IE 10+.
 
 By Robin Hansson (robin@rarths.net)
 

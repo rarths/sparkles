@@ -1,3 +1,4 @@
+/* SPARKLES FLASH MESSAGE CONTAINER */
 div.top-flash {
 	position: fixed;
 	top: 0;
@@ -15,6 +16,8 @@ div.top-flash span p {
 	color: white;
 	position: relative;
 }
+
+/* FLASH MESSAGE COLORS */
 span.error p {
 	background-color: #f15e58
 }
@@ -24,6 +27,8 @@ span.success p {
 span.notice p {
 	background-color: #72d6e8;
 }
+
+/* FLASH MESSAGE 5S GONE ANIMATION IE 10+ SUPPORT */
 div.top-flash {
     -moz-animation: cssAnimation 0s ease-in 5s forwards; /* Firefox */
     -webkit-animation: cssAnimation 0s ease-in 5s forwards; /* Safari and Chrome */
