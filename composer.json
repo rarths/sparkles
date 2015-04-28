@@ -1,7 +1,7 @@
 {
     "name": "rarths/csparkles",    
     "type": "library",
-    "description": "PHP classes for flashing messages",
+    "description": "PHP class for flashing messages",
     "keywords": ["module", "framework", "mvc", "flash", "messages", "anax"],
     "homepage": "http://dbwebb.se",
     "license": "MIT",
