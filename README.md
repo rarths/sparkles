@@ -3,11 +3,11 @@ Sparkles, a PHP class for flashing messages in your Anax
 
 Background
 ----------------------------------
-Made this modul as a assignment in the PHPMVC course at BTH. The module is inspired by the flash class used in the [Phalcon framework](http://docs.phalconphp.com/en/latest/api/Phalcon_Flash.html).
+Made this modul as a assignment in the PHPMVC course at BTH. The module is inspired by the flash class used in the [Phalcon framework](http://docs.phalconphp.com/en/latest/api/Phalcon_Flash.html). Messages are stored in sessions to stay alive during redirects.
 
 Install
 ----------------------------------
-- Install [package](https://packagist.org/packages/rarths/csparkles) via composer or clone it directly to your project and make sure csparkles autoloads.
+- Install [packagist](https://packagist.org/packages/rarths/csparkles) via composer or clone it directly to your project and make sure csparkles autoloads.
 
 - Add Sparkles as a service to your project through the Dependency Injection and make sure you start the session.
 ```php
