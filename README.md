@@ -7,7 +7,7 @@ Made this modul as a assignment in the PHPMVC course at BTH. The module is inspi
 
 Install
 ----------------------------------
-- Install [packagist](https://packagist.org/packages/rarths/csparkles) via composer (recomended) or clone it directly to your project. If you choose to clone it, make sure csparkles.php autoloads.
+- Install through [packagist](https://packagist.org/packages/rarths/csparkles) via composer (recomended) or clone it directly to your project. If you choose to clone it, make sure csparkles.php autoloads.
 
 - Add Sparkles as a service to your project through the Dependency Injection and make sure session is started.
 ```php
@@ -54,6 +54,10 @@ Extra
 In that way you make sure you're not excluding any flashing messages.
 
 - Messages is using CSS3 Animations to be gone in 5s. CSS3 Animations is supported by IE 10+.
+
+- Messages will look like [this](https://packagist.org/packages/rarths/csparkles)
+
+- Problems? Feel free to contact me (in Swedish or English)
 
 By Robin Hansson (robin@rarths.net)
 
