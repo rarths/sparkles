@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/rarths/sparkles.svg?branch=master)](https://travis-ci.org/rarths/sparkles)
+
+[![Build Status](https://scrutinizer-ci.com/g/rarths/sparkles/badges/build.png?b=master)](https://scrutinizer-ci.com/g/rarths/sparkles/build-status/master)
+
 Sparkles, a PHP class for flashing messages in your Anax
 ==================================
 
