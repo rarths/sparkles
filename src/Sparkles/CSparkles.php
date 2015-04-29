@@ -8,12 +8,12 @@ namespace Rarths\Sparkles;
 */
 class CSparkles implements \Anax\DI\IInjectionAware {
 
-	// Properties for CSS classes
-	private $error;
-	private $success;
-	private $notice;
-
 	use \Anax\DI\TInjectable;
+
+	// Properties for CSS classes
+	public $error;
+	public $success;
+	public $notice;
 
 	/**
 	* Instanstiate custom CSS classes. Using default classes if no parameter is passed.

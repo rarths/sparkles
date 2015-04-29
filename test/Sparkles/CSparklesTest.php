@@ -68,7 +68,7 @@ class CSparklesTest extends \PHPUnit_Framework_TestCase {
     * @return void
     *
     */
-    public function testClassParamters() {
+    public function testClassParameters() {
         // Custom CSS classes
         $css = array(
             'error'     => 'custom-error',
