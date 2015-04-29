@@ -14,10 +14,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3"
-    },
-    "autoload": {
-        "psr-4": { "Rarths\\": "src/" }
+        "php": ">=5.3",
+        "anax/mvc": "dev-master"
     }
 }
 
