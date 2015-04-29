@@ -79,7 +79,7 @@ Todo
 History
 ----------------------------------
 
-v1.0
+v2.0 Added PHPUnit testing
 
 
 ```
