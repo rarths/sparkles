@@ -8,6 +8,11 @@ namespace Rarths\Sparkles;
 */
 class CSparkles implements \Anax\DI\IInjectionAware {
 
+	// Properties for CSS classes
+	private $error;
+	private $success;
+	private $notice;
+
 	use \Anax\DI\TInjectable;
 
 	/**
@@ -19,9 +24,9 @@ class CSparkles implements \Anax\DI\IInjectionAware {
 	*/
 	public function __construct($options = array()) {
 		// Set CSS classes
-		$this->error = isset($options['error']) ? $options['error'] : 'error'; 
-		$this->success = isset($options['success']) ? $options['success'] : 'success'; 
-		$this->notice = isset($options['notice']) ? $options['notice'] : 'notice'; 
+		$this->error = isset($options['error']) ? $options['error'] : 'error';
+		$this->success = isset($options['success']) ? $options['success'] : 'success';
+		$this->notice = isset($options['notice']) ? $options['notice'] : 'notice';
 	}
 
 
