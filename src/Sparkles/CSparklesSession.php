@@ -15,7 +15,7 @@ class CSparklesSession extends \Rarths\Sparkles\CSparkles
      *
      */
     public function setToSession($data) {
-        parent::_setSession($data);
+        $this->_setSession($data);
     }
 
     /**
@@ -25,7 +25,7 @@ class CSparklesSession extends \Rarths\Sparkles\CSparkles
      *
      */
     public function getFromSession() {
-        $data = parent::_getSession();
+        $data = $this->_getSession();
         
         return $data;
     }
@@ -37,6 +37,6 @@ class CSparklesSession extends \Rarths\Sparkles\CSparkles
      *
      */
     public function cleanSession() {
-        parent::_clean();
+        $this->_clean();
     }
 }

@@ -14,8 +14,6 @@ class CSparklesTest extends \PHPUnit_Framework_TestCase {
     /**
     * Costructor sets instance of $di
     *
-    * @return void
-    *
     */
     public function __construct() {
         $this->di = new \Anax\DI\CDIFactoryDefault();
@@ -25,7 +23,9 @@ class CSparklesTest extends \PHPUnit_Framework_TestCase {
     /**
     * Initialise session service to class object
     *
-    * @return void
+    * @param object $class
+    *
+    * @return object $class
     *
     */
     private function initSessionService($class) {
@@ -128,6 +128,7 @@ class CSparklesTest extends \PHPUnit_Framework_TestCase {
     *
     * @return void
     *
+
     */
     public function testCleanSession() {
         $sparkles = new \Rarths\Sparkles\CSparklesSession();

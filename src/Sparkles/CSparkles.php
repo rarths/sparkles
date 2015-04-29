@@ -19,8 +19,6 @@ class CSparkles implements \Anax\DI\IInjectionAware {
 	* Instanstiate custom CSS classes. Using default classes if no parameter is passed.
 	*
 	* @param array $options with custom CSS classes.
-	* 
-	* @return void
 	*/
 	public function __construct($options = array()) {
 		// Set CSS classes
@@ -34,7 +32,7 @@ class CSparkles implements \Anax\DI\IInjectionAware {
 	* Store message to session.
 	*
 	* @param string $message with message to store.
-	* 
+	* @property object $session
 	* @return void
 	*/
 	protected function _setSession($message) {
@@ -47,6 +45,7 @@ class CSparkles implements \Anax\DI\IInjectionAware {
 	/**
 	* Get message(s) from session.
 	*
+	* @property object $session
 	* @return string $message
 	*/
 	protected function _getSession() {
@@ -59,6 +58,7 @@ class CSparkles implements \Anax\DI\IInjectionAware {
 	/**
 	* Removes all messages from session.
 	*
+	* @property object $session
 	* @return void
 	*/
 	protected function _clean() {
@@ -69,9 +69,8 @@ class CSparkles implements \Anax\DI\IInjectionAware {
 	/**
 	* Edit massage with type and send it to session.
 	*
-	* @param string $type with the message type.
+	* @param string $type with the flash type.
 	* @param string $message with message.
-	* 
 	* @return void
 	*/
 	public function flash($type, $message) {
